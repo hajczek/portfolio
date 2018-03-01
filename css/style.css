@@ -339,7 +339,7 @@ footer p {
 #photo {
 	display: grid;
 	justify-content: start;
-	align-content: left;
+	align-content: start;
 	grid-column: 2 / 3;
 }
 
@@ -353,6 +353,7 @@ footer p {
 .link-img img:hover {
 	opacity: 0.5;
 }
+
 
 
 
