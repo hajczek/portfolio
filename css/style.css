@@ -1,65 +1,10 @@
 /*
  *
- * Reset
- * 
- */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-
-body {
-	line-height: 1;
-}
-
-
-ol,
-ul {
-	list-style: none;
-}
-
-
-blockquote,
-q {
-	quotes: none;
-}
-
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-/*
- *
  * Body
- * 
+ *
  */
 
-body, 
+body,
 html {
   height: 100%;
   margin: 0;
@@ -248,7 +193,7 @@ footer p {
 /*
  *
  * Title and text
- * 
+ *
  */
 
 h1 {
@@ -333,7 +278,7 @@ footer p {
 /*
  *
  * Images
- * 
+ *
  */
 
 #photo {
@@ -360,7 +305,7 @@ footer p {
 /*
  *
  * Links
- * 
+ *
  */
 
 .link-text {
@@ -386,7 +331,7 @@ footer p {
 /*
  *
  * Icons
- * 
+ *
  */
 
 .icons-box {
@@ -418,62 +363,62 @@ footer p {
 /*
  *
  * Responsive
- * 
+ *
  */
 
 
 @media only screen and (max-width: 1300px) {
-	
+
 	.container {
 		grid-template-columns: 1fr 1100px 1fr;
 	}
-	
+
 
 	header {
 		grid-template-columns: 1fr 550px 550px 1fr;
 	}
-	
-	
+
+
 	main {
 		width: 1100px;
 	}
-	
-	
+
+
 	.slider,
 	.slider img {
 		width: 1100px;
 		height: 504px;
 	}
-	
-	
+
+
 	.github-box,
 	.open-source-box{
 		width: 330px;
 		margin-right: 50px;
 	}
-	
+
 
 	.codepen-box {
 		width: 330px;
 	}
-	
-	
+
+
 	.link-img img {
 		width: 330px;
 	}
-	
+
 	.link-text {
 		font-size: 0.8em;
 		margin-left: 20px;
 	}
-	
-	
+
+
 	footer {
 		display: grid;
 		grid-template-columns: 1fr 700px 400px 1fr;
 	}
-	
-	
+
+
 	h4 {
 		font-size: 1em;
 	}
@@ -482,56 +427,56 @@ footer p {
 
 
 @media only screen and (max-width: 1100px) {
-	
+
 	.container {
 		grid-template-columns: 1fr 900px 1fr;
 	}
-	
+
 
 	header {
 		grid-template-columns: 1fr 450px 450px 1fr;
 	}
-	
+
 
 	main{
 		width: 900px;
 	}
-	
-	
+
+
 	.slider,
 	.slider img {
 		width: 900px;
 		height: 413px;
 	}
-	
-	
+
+
 	.github-box,
 	.open-source-box {
 		width: 290px;
 		margin-right: 15px;
 	}
-	
+
 
 	.codepen-box {
 		width: 290px;
 	}
-	
-	
+
+
 	.link-img img {
 		width: 290px;
 	}
-	
-	
+
+
 	footer {
 		grid-template-columns: 1fr 600px 300px 1fr;
 	}
-	
-	
+
+
 	footer p {
 		margin-top: 25px;
 	}
-	
-	
+
+
 	h2 {
 		font-weight: 300;
 	}
@@ -540,22 +485,22 @@ footer p {
 
 
 @media only screen and (max-width: 900px) {
-	
+
 	.container {
 		grid-template-columns: 1fr 750px 1fr;
 	}
-	
+
 
 	header {
 		grid-template-columns: 1fr 275px 475px 1fr;
 	}
-	
-	
+
+
 	main {
 		width: 750px;
 	}
-	
-		
+
+
 	.slogan {
 		font-size: 0.65em;
 		top: -43px;
@@ -563,90 +508,90 @@ footer p {
 		color: #444;
 		width: 100%;
 	}
-	
-	
+
+
 	.slider,
 	.slider img {
 		width: 750px;
 		height: 321px;
 		margin: none;
 	}
-	
-	
+
+
 	.portfolio,
 	.portfolio h3 {
 		margin-left: 1%;
 	}
-	
-	
+
+
 	.github-box,
 	.open-source-box {
 		width: 230px;
 		margin-right: 5px;
 	}
-	
+
 
 	.codepen-box {
 		width: 230px;
 	}
-	
-	
+
+
 	.link-img img {
 		width: 230px;
 	}
-	
-	
+
+
 	footer {
 		grid-template-columns: 1fr 400px 300px 1fr;
 	}
-	
-	
+
+
 	footer p {
 		margin-left: 0;
 		margin-top: 30px;
 	}
-	
-	
+
+
 	h1 {
 		font-size: 1em;
 		margin-top: 20px;
 	}
-	
-	
+
+
 	h2 {
 		text-shadow: 1px 1px 1px #053573;
 		font-weight: bold;
 	}
-	
-	
+
+
 	h3 {
 		margin-left: 2%;
 	}
-	
-	
+
+
 	h3,
 	.portfolio h3 {
 		width: 90%;
 		font-size: 1em;
 	}
-	
+
 	h4 {
 		margin-left: 10px;
 	}
-	
+
 	h2,
 	h4,
 	p {
 		font-size: 0.8em;
 	}
-	
-	
+
+
 	p {
 		width: 90%;
 		margin-left: 2%;
 	}
-	
-	
+
+
 	.link-text {
 		font-size: 0.6em;
 	}
@@ -655,27 +600,27 @@ footer p {
 
 
 @media only screen and (max-width: 620px) {
-	
+
 	.container {
 		grid-template-columns: 1fr 600px 1fr;
 	}
-	
+
 
 	header {
 		grid-template-columns: 1fr 200px 400px 1fr;
 	}
-	
-	
+
+
 	main {
 		width: 600px;
 	}
-	
-	
+
+
 	.slogan {
 		font-size: 0.65em;
 	}
-	
-	
+
+
 	.slider,
 	.slider img {
 		/* width: 100%; */
@@ -683,49 +628,49 @@ footer p {
 		height: 250px;
 		margin-bottom: 20px;
 	}
-	
-	
+
+
 	.github-box,
 	.open-source-box {
 		width: 190px;
 		margin-right: 15px;
 	}
-	
+
 
 	.codepen-box {
 		width: 190px;
 	}
-	
-	
+
+
 	.link-img img {
 		width: 190px;
 	}
-	
-	
+
+
 	footer {
 		grid-template-columns: 1fr 300px 300px 1fr;
 	}
-	
+
 	footer p {
 		margin-top: 25px;
 	}
-	
-	
+
+
 	h1 {
 		margin-top: 20px;
 	}
-	
-	
+
+
 	h2 {
 		font-weight: bold;
 	}
-	
-	
+
+
 	h4 {
 		font-size: 0.72em;
 		margin: 10px 0 0 10px;
 	}
-	
+
 	.link-text {
 		font-size: 0.55em;
 		margin-left: 10px;
@@ -735,33 +680,33 @@ footer p {
 
 
 @media only screen and (max-width: 600px) {
-	
+
 	.container {
 		grid-template-columns: 1fr;
 		grid-gap: 30px 0;
 	}
-	
+
 
 	header {
 		grid-template-columns: 130px 1fr;
 		grid-gap: 20px 0;
 	}
-	
-	
+
+
 	main {
 		grid-template-columns: 1fr;
 		width: 100%;
 	}
-	
-	
+
+
 	#photo,
 	.slider,
 	.text-box,
 	.portfolio {
 		grid-column: 1 / 2;
 	}
-	
-	
+
+
 	.icons-box {
 		display: block;
 		grid-column: 1 / 2;
@@ -771,8 +716,8 @@ footer p {
 		align-content: start;
 		margin-left: 10%;
 	}
-	
-	
+
+
 	.icons-box a {
 		margin-top: 25px;
 		width: 25%;
@@ -780,15 +725,15 @@ footer p {
 		float: left;
 		text-align: center;
 	}
-	
-	
+
+
 	footer {
 		grid-template-columns: 1fr;
 		height: 180px;
 		margin-top: 0;
 	}
-	
-	
+
+
 	footer p {
 		grid-column: 1 / 2;
 		font-size: 0.6em;
@@ -796,27 +741,27 @@ footer p {
 		text-align: center;
 		margin-left: 0;
 	}
-	
-	
+
+
 	h1,
 	h2 {
 		margin-right: 30px;
 	}
-	
-	
+
+
 	h3 {
 		width: 96%;
 		margin-left: 2%;
 	}
-	
-	
+
+
 	.portfolio h3 {
 		grid-column: 1 / 6;
 		width: 96%;
 		margin-left: 2%;
 		font-size: 1em;
 	}
-	
+
 	.link-text {
 		font-size: 0.55em;
 		margin-left: 10px;
@@ -826,21 +771,21 @@ footer p {
 
 
 @media only screen and (max-width: 500px) {
-	
+
 	.slider,
 	.slider img {
 		height: 220px;
 		margin-bottom: 0;
 	}
-	
-	
+
+
 	.portfolio {
 		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
 		grid-row: 4 / 7;
 		margin-bottom: 0;
 	}
-	
+
 
 	.github-box,
 	.open-source-box {
@@ -848,32 +793,32 @@ footer p {
 		width: 230px;
 		margin: 0 auto 25px auto;
 	}
-	
-	
+
+
 	.codepen-box {
 		grid-column: 1 / 2;
 		width: 230px;
 		margin: 0 auto 0 auto;
 	}
-	
-	
+
+
 	.link-img img {
 		width: 100%;
 	}
-	
-	
+
+
 	footer {
 		grid-row: 7 / 8;
 	}
-	
-	
+
+
 	h1 {
 		font-size: 0.85em;
 		letter-spacing: 0;
 		justify-content: start;
 	}
-	
-	
+
+
 	h2 {
 		letter-spacing: 0;
 		font-size: 0.7em;
@@ -883,21 +828,21 @@ footer p {
 		color: #c61b6f;
 		text-shadow: none;
 	}
-	
-	
+
+
 	h3,
 	.portfolio h3 {
 		font-size: 0.9em;
 		margin-top: 10px;
 		letter-spacing: 0.05em;
 	}
-	
-	
+
+
 	h4 {
 		font-size: 0.8em;
 	}
-	
-	
+
+
 	.link-text {
 		font-size: 0.65em;
 	}
@@ -906,20 +851,20 @@ footer p {
 
 
 @media only screen and (max-width: 420px) {
-	
+
 	.slider,
 	.slider img {
 		width: 100%;
 		height: 200px;
 		margin-bottom: 0;
 	}
-	
-	
+
+
 	.slider img {
 		top: 170px;
 	}
-	
-	
+
+
 	.slogan {
 		top: -40px;
 		left: 10px;
@@ -928,14 +873,14 @@ footer p {
 		color: #444;
 		font-size: 0.65em;
 	}
-	
-	
+
+
 	h3,
 	.portfolio h3 {
 		font-size: 0.8em;
 	}
-	
-	
+
+
 	p {
 		width: 90%;
 		margin-left: 3%;
@@ -946,11 +891,11 @@ footer p {
 
 
 @media only screen and (max-width: 370px) {
-	
+
 	h1 {
 		font-size: 0.7em;
 	}
-	
+
 	h2 {
 		font-size: 0.6em;
 	}
