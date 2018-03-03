@@ -30,7 +30,7 @@ body {
 header {
 	background: linear-gradient(to right, #000 , #333);
 	display: grid;
-	grid-template-columns: 1fr 600px 600px 1fr;
+	grid-template-columns: 1fr 120px 1080px 1fr;
 	height: 120px;
 	width: 100%;
 	justify-content: start;
@@ -49,29 +49,37 @@ main {
 	grid-gap: 20px 0;
 }
 
+/*
+ *
+ * Slider
+ *
+ */
+
 
 .slider {
 	display: grid;
 	width: 1200px;
 	height: 550px;
-	justify-content: start;
+	justify-content: center;
 	align-content: start;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	margin: 0 auto;
-	box-shadow: 0 0 20px 5px #666;
 }
 
 
 .slider img {
 	position: absolute;
 	width: 1200px;
-	height: 550px;
+	height: auto;
   	top: 170px;
   	-webkit-transition: opacity 3s ease-in-out;
  	-moz-transition: opacity 3s ease-in-out;
   	-o-transition: opacity 3s ease-in-out;
   	transition: opacity 3s ease-in-out;
+	box-shadow: 0 0 20px 5px #666;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -95,22 +103,34 @@ main {
 	animation: sliderAnimation 8s ease-in-out infinite alternate;
 }
 
+/*
+ *
+ * Text box
+ *
+ */
+
 
 .text-box {
 	display: grid;
 	width: 100%;
-	height: auto;
-	justify-content: start;
-	align-content: start;
+	/* justify-content: start;
+	align-content: start; */
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
 	margin-bottom: 15px;
 }
 
+/*
+ *
+ * Portfolio boxes
+ *
+ */
+
 
 .portfolio {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
 	width: 100%;
 	height: auto;
 	justify-content: start;
@@ -123,7 +143,7 @@ main {
 
 
 .portfolio h3 {
-	grid-column: 1 / 6;
+	grid-column: 1 / 3;
 }
 
 
@@ -165,6 +185,14 @@ main {
 }
 
 
+
+/*
+ *
+ * Footer
+ *
+ */
+
+
 footer {
 	display: grid;
 	grid-template-columns: 1fr 800px 400px 1fr;
@@ -196,6 +224,7 @@ footer p {
  *
  */
 
+
 h1 {
 	display: grid;
 	justify-content: end;
@@ -222,6 +251,8 @@ h2 {
 h3,
 .portfolio h3 {
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-column: 1 / 2;
 	width: 100%;
 	color: #007596;
 	font-size: 1.1em;
@@ -281,6 +312,7 @@ footer p {
  *
  */
 
+
 #photo {
 	display: grid;
 	justify-content: start;
@@ -301,12 +333,12 @@ footer p {
 
 
 
-
 /*
  *
  * Links
  *
  */
+
 
 .link-text {
 	color: #c7c8c9;
@@ -330,9 +362,10 @@ footer p {
 
 /*
  *
- * Icons
+ * Icons in footer
  *
  */
+
 
 .icons-box {
 	display: inline-grid;
@@ -375,7 +408,7 @@ footer p {
 
 
 	header {
-		grid-template-columns: 1fr 550px 550px 1fr;
+		grid-template-columns: 1fr 120px 980px 1fr;
 	}
 
 
@@ -384,10 +417,15 @@ footer p {
 	}
 
 
-	.slider,
-	.slider img {
+	.slider {
 		width: 1100px;
 		height: 504px;
+	}
+
+
+	.slider img {
+		width: 1100px;
+		height: auto;
 	}
 
 
@@ -434,7 +472,7 @@ footer p {
 
 
 	header {
-		grid-template-columns: 1fr 450px 450px 1fr;
+		grid-template-columns: 1fr 120px 780px 1fr;
 	}
 
 
@@ -443,10 +481,15 @@ footer p {
 	}
 
 
-	.slider,
-	.slider img {
+	.slider {
 		width: 900px;
 		height: 413px;
+	}
+
+
+	.slider img {
+		width: 900px;
+		height: auto;
 	}
 
 
@@ -487,17 +530,17 @@ footer p {
 @media only screen and (max-width: 900px) {
 
 	.container {
-		grid-template-columns: 1fr 750px 1fr;
+		grid-template-columns: 1fr 700px 1fr;
 	}
 
 
 	header {
-		grid-template-columns: 1fr 275px 475px 1fr;
+		grid-template-columns: 1fr 120px 580px 1fr;
 	}
 
 
 	main {
-		width: 750px;
+		width: 700px;
 	}
 
 
@@ -510,11 +553,16 @@ footer p {
 	}
 
 
-	.slider,
-	.slider img {
-		width: 750px;
+	.slider {
+		width: 700px;
 		height: 321px;
 		margin: none;
+	}
+
+
+	.slider img {
+		width: 700px;
+		height: auto;
 	}
 
 
@@ -526,18 +574,18 @@ footer p {
 
 	.github-box,
 	.open-source-box {
-		width: 230px;
-		margin-right: 5px;
+		width: 210px;
+		margin-right: 1.1em;
 	}
 
 
 	.codepen-box {
-		width: 230px;
+		width: 210px;
 	}
 
 
 	.link-img img {
-		width: 230px;
+		width: 210px;
 	}
 
 
@@ -553,42 +601,40 @@ footer p {
 
 
 	h1 {
-		font-size: 1em;
-		margin-top: 20px;
+		font-size: 0.9em;
+		margin: 20px 20px 0 0;
 	}
 
 
 	h2 {
-		text-shadow: 1px 1px 1px #053573;
 		font-weight: bold;
+		margin-right: 20px;
+		font-size: 0.7em;
 	}
 
 
 	h3 {
 		margin-left: 2%;
+		width: auto;
+		font-size: 1em;
 	}
 
 
-	h3,
 	.portfolio h3 {
-		width: 90%;
+		width: auto;
 		font-size: 1em;
 	}
 
 	h4 {
 		margin-left: 10px;
-	}
-
-	h2,
-	h4,
-	p {
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 
 	p {
 		width: 90%;
 		margin-left: 2%;
+		font-size: 0.7em;
 	}
 
 
@@ -599,7 +645,7 @@ footer p {
 
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 700px) {
 
 	.container {
 		grid-template-columns: 1fr 600px 1fr;
@@ -607,7 +653,7 @@ footer p {
 
 
 	header {
-		grid-template-columns: 1fr 200px 400px 1fr;
+		grid-template-columns: 1fr 120px 480px 1fr;
 	}
 
 
@@ -621,12 +667,14 @@ footer p {
 	}
 
 
-	.slider,
-	.slider img {
-		/* width: 100%; */
+	.slider {
 		width: 600px;
-		height: 250px;
-		margin-bottom: 20px;
+		height: 260px;
+	}
+
+	.slider img {
+		max-width: 600px;
+		height: auto;
 	}
 
 
@@ -683,18 +731,20 @@ footer p {
 
 	.container {
 		grid-template-columns: 1fr;
+		grid-column: 1 / 2;
 		grid-gap: 30px 0;
 	}
 
 
 	header {
-		grid-template-columns: 130px 1fr;
+		grid-template-columns: 120px 2fr;
 		grid-gap: 20px 0;
 	}
 
 
 	main {
 		grid-template-columns: 1fr;
+		grid-column: 1 / 2;
 		width: 100%;
 	}
 
@@ -703,7 +753,31 @@ footer p {
 	.slider,
 	.text-box,
 	.portfolio {
+		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
+		width: 100%;
+	}
+
+	.slider img {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+	footer {
+		grid-template-columns: 1fr;
+		grid-column: 1 / 2;
+		height: 180px;
+		margin-top: 0;
+	}
+
+
+	footer p {
+		grid-column: 1 / 2;
+		font-size: 0.6em;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
 	}
 
 
@@ -727,25 +801,11 @@ footer p {
 	}
 
 
-	footer {
-		grid-template-columns: 1fr;
-		height: 180px;
-		margin-top: 0;
-	}
-
-
-	footer p {
-		grid-column: 1 / 2;
-		font-size: 0.6em;
-		width: 100%;
-		text-align: center;
-		margin-left: 0;
-	}
-
-
 	h1,
 	h2 {
 		margin-right: 30px;
+		justify-content: start;
+		margin-left: 20px;
 	}
 
 
@@ -772,10 +832,14 @@ footer p {
 
 @media only screen and (max-width: 500px) {
 
-	.slider,
-	.slider img {
-		height: 220px;
+	.slider {
+		height: 200px;
 		margin-bottom: 0;
+	}
+
+
+	.slider img {
+		height: auto;
 	}
 
 
@@ -807,15 +871,9 @@ footer p {
 	}
 
 
-	footer {
-		grid-row: 7 / 8;
-	}
-
-
 	h1 {
-		font-size: 0.85em;
+		font-size: 0.7em;
 		letter-spacing: 0;
-		justify-content: start;
 	}
 
 
@@ -823,10 +881,7 @@ footer p {
 		letter-spacing: 0;
 		font-size: 0.7em;
 		line-height: 1;
-		margin: 5px 0 0 0;
-		justify-content: start;
 		color: #c61b6f;
-		text-shadow: none;
 	}
 
 
@@ -852,10 +907,9 @@ footer p {
 
 @media only screen and (max-width: 420px) {
 
-	.slider,
-	.slider img {
+	.slider {
 		width: 100%;
-		height: 200px;
+		height: 170px;
 		margin-bottom: 0;
 	}
 
@@ -895,6 +949,7 @@ footer p {
 	h1 {
 		font-size: 0.7em;
 	}
+
 
 	h2 {
 		font-size: 0.6em;
