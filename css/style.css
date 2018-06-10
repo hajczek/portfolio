@@ -12,20 +12,17 @@ html {
   width: 100%;
 }
 
-
 body {
   background-color: #dedad3;
   color: #1e2121;
   font: 30px "Marvel", sans-serif;
 }
 
-
 .container {
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: 1fr 1200px 1fr;
 }
-
 
 header {
 	background: linear-gradient(to right, #000 , #333);
@@ -40,21 +37,20 @@ header {
 	box-shadow: 0 0 20px 5px #666;
 }
 
-
 main {
 	display: grid;
 	width: 1200px;
 	grid-column: 2 / 3;
-	grid-row: 2 / 5;
+	grid-row: 2 / 11;
 	grid-gap: 20px 0;
 }
+
 
 /*
  *
  * Slider
  *
  */
-
 
 .slider {
 	display: grid;
@@ -66,7 +62,6 @@ main {
 	grid-row: 2 / 3;
 	margin: 0 auto;
 }
-
 
 .slider img {
 	position: absolute;
@@ -81,7 +76,6 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 @keyframes sliderAnimation {
 	0% {
@@ -98,17 +92,16 @@ main {
 	}
 }
 
-
 .slider .top {
 	animation: sliderAnimation 8s ease-in-out infinite alternate;
 }
+
 
 /*
  *
  * Text box
  *
  */
-
 
 .text-box {
 	display: grid;
@@ -120,12 +113,12 @@ main {
 	margin-bottom: 15px;
 }
 
+
 /*
  *
  * Portfolio boxes
  *
  */
-
 
 .portfolio {
 	display: grid;
@@ -141,11 +134,9 @@ main {
 	padding-top: 25px;
 }
 
-
 .portfolio h3 {
 	grid-column: 1 / 3;
 }
-
 
 .github-box,
 .open-source-box,
@@ -157,13 +148,11 @@ main {
 	width: 360px;
 }
 
-
 .github-box:hover,
 .open-source-box:hover,
 .codepen-box:hover {
 	box-shadow: none;
 }
-
 
 .github-box {
 	grid-column: 1 / 2;
@@ -171,25 +160,23 @@ main {
 	background-color: #f3426c;
 }
 
-
 .open-source-box {
 	grid-column: 2 / 3;
 	margin-right: 60px;
 	background-color: #ba086b;
 }
 
-
 .codepen-box {
 	grid-column: 3 / 4;
 	background-color: #0c7784;
 }
+
 
 /*
  *
  * Links for projects on github
  *
  */
-
 
 .portfolio-links {
 	display: grid;
@@ -226,7 +213,6 @@ main {
 	background-color: #f3426c;
 	margin-right: 60px;
 }
-
 
 .project-link-wcm img,
 .project-link-pam img,
@@ -279,8 +265,6 @@ main {
 	text-decoration: none;
 }
 
-
-
 .project-link-pam {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -309,7 +293,6 @@ main {
 	margin-top: 25px;
 }
 
-
 .project-link-ag {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -325,13 +308,11 @@ main {
 }
 
 
-
 /*
  *
  * Footer
  *
  */
-
 
 footer {
 	display: grid;
@@ -347,7 +328,6 @@ footer {
 	box-shadow: 0 0 20px 5px #666;
 }
 
-
 footer p {
 	font-size: 0.8em;
     font-weight: 700;
@@ -357,13 +337,11 @@ footer p {
 }
 
 
-
 /*
  *
  * Title and text
  *
  */
-
 
 h1 {
 	display: grid;
@@ -376,7 +354,6 @@ h1 {
 	font: 1.1em "Exo 2", sans-serif;
 }
 
-
 h2 {
 	display: grid;
 	justify-content: end;
@@ -386,7 +363,6 @@ h2 {
 	letter-spacing: 0.05em;
 	font: 300 0.9em "Exo 2", sans-serif;
 }
-
 
 h3,
 .portfolio h3,
@@ -402,7 +378,6 @@ h3,
 	letter-spacing: 0.06em;
 }
 
-
 h4 {
 	color: #fff;
 	margin: 10px 0 0 20px;
@@ -411,7 +386,6 @@ h4 {
 	font-size: 1.1em;
 	font-weight: 700;
 }
-
 
 .slogan {
 	color: #d7cdc1;
@@ -423,7 +397,6 @@ h4 {
 	width: 100%;
 }
 
-
 p {
 	font-size: 0.8em;
     font-weight: 700;
@@ -432,7 +405,6 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 footer p {
 	display: inline;
@@ -446,13 +418,11 @@ footer p {
 }
 
 
-
 /*
  *
  * Images
  *
  */
-
 
 #photo {
 	display: grid;
@@ -461,17 +431,14 @@ footer p {
 	grid-column: 2 / 3;
 }
 
-
 .link-img img {
 	opacity: 1;
 	width: 360px;
 }
 
-
 .link-img img:hover {
 	opacity: 0.5;
 }
-
 
 
 /*
@@ -479,7 +446,6 @@ footer p {
  * Links
  *
  */
-
 
 .link-text {
 	color: #c7c8c9;
@@ -489,16 +455,13 @@ footer p {
 	text-decoration: none;
 }
 
-
 .link-text:hover {
 	color: #fff;
 }
 
-
 .link-copy {
 	color: #14a3b4;
 }
-
 
 
 /*
@@ -506,7 +469,6 @@ footer p {
  * Icons in footer
  *
  */
-
 
 .icons-box {
 	display: inline-grid;
@@ -516,22 +478,18 @@ footer p {
 	grid-column: 3 / 4;
 }
 
-
 .icons-box a {
 	text-align: right;
 	margin-top: 25px;
 }
 
-
 .icons-box a img {
 	opacity: 0.5;
 }
 
-
 .icons-box a img:hover {
 	opacity: 1;
 }
-
 
 
 /*
@@ -540,35 +498,29 @@ footer p {
  *
  */
 
-
 @media only screen and (max-width: 1300px) {
 
 	.container {
 		grid-template-columns: 1fr 1100px 1fr;
 	}
 
-
 	header {
 		grid-template-columns: 1fr 120px 980px 1fr;
 	}
 
-
 	main {
 		width: 1100px;
 	}
-
 
 	.slider {
 		width: 1100px;
 		height: 504px;
 	}
 
-
 	.slider img {
 		width: 1100px;
 		height: auto;
 	}
-
 
 	.github-box,
 	.open-source-box{
@@ -576,11 +528,9 @@ footer p {
 		margin-right: 50px;
 	}
 
-
 	.codepen-box {
 		width: 330px;
 	}
-
 
 	.link-img img {
 		width: 330px;
@@ -591,6 +541,14 @@ footer p {
 		margin-left: 20px;
 	}
 
+	.box-img {
+		width: 330px;
+		margin-right: 50px;
+	}
+
+	.project-descript p {
+		font-size: 0.7em;
+	}
 
 	footer {
 		display: grid;
@@ -604,35 +562,29 @@ footer p {
 }
 
 
-
 @media only screen and (max-width: 1100px) {
 
 	.container {
 		grid-template-columns: 1fr 900px 1fr;
 	}
 
-
 	header {
 		grid-template-columns: 1fr 120px 780px 1fr;
 	}
 
-
 	main{
 		width: 900px;
 	}
-
 
 	.slider {
 		width: 900px;
 		height: 413px;
 	}
 
-
 	.slider img {
 		width: 900px;
 		height: auto;
 	}
-
 
 	.github-box,
 	.open-source-box {
@@ -640,32 +592,50 @@ footer p {
 		margin-right: 15px;
 	}
 
-
 	.codepen-box {
 		width: 290px;
 	}
-
 
 	.link-img img {
 		width: 290px;
 	}
 
+	.box-img {
+		width: 290px;
+		margin-right: 50px;
+	}
+	
+	.project-descript {
+		padding: 20px;
+	}
+
+	.project-descript p {
+		font-size: 0.565em;
+		width: 95%;
+		line-height: 1.4em;
+		height: 50px;
+	}
+
+	.project-descript p span {
+		font-size: 1em;
+	}
+
+	.project-descript a {
+		font-size: 0.8em;
+	}
 
 	footer {
 		grid-template-columns: 1fr 600px 300px 1fr;
 	}
 
-
 	footer p {
 		margin-top: 25px;
 	}
-
 
 	h2 {
 		font-weight: 300;
 	}
 }
-
 
 
 @media only screen and (max-width: 900px) {
@@ -674,16 +644,13 @@ footer p {
 		grid-template-columns: 1fr 700px 1fr;
 	}
 
-
 	header {
 		grid-template-columns: 1fr 120px 580px 1fr;
 	}
 
-
 	main {
 		width: 700px;
 	}
-
 
 	.slogan {
 		font-size: 0.65em;
@@ -693,25 +660,21 @@ footer p {
 		width: 100%;
 	}
 
-
 	.slider {
 		width: 700px;
 		height: 321px;
 		margin: none;
 	}
 
-
 	.slider img {
 		width: 700px;
 		height: auto;
 	}
 
-
 	.portfolio,
 	.portfolio h3 {
 		margin-left: 1%;
 	}
-
 
 	.github-box,
 	.open-source-box {
@@ -719,33 +682,52 @@ footer p {
 		margin-right: 1.1em;
 	}
 
-
 	.codepen-box {
 		width: 210px;
 	}
-
 
 	.link-img img {
 		width: 210px;
 	}
 
+	.box-img {
+		width: 210px;
+		margin-right: 1.1em;
+	}
+	
+	.project-descript {
+		padding: 10px;
+	}
+
+	.project-descript p {
+		margin-left: 10px;
+		line-height: 1.1;
+		height: 35px;
+	}
+
+	.project-descript p span {
+		display: none;
+	}
+
+	.project-descript a {
+		margin-left: 10px;
+		margin-top: 10px;
+		font-size: 0.7em;
+	}
 
 	footer {
 		grid-template-columns: 1fr 400px 300px 1fr;
 	}
-
 
 	footer p {
 		margin-left: 0;
 		margin-top: 30px;
 	}
 
-
 	h1 {
 		font-size: 0.9em;
 		margin: 20px 20px 0 0;
 	}
-
 
 	h2 {
 		font-weight: bold;
@@ -753,13 +735,11 @@ footer p {
 		font-size: 0.7em;
 	}
 
-
 	h3 {
 		margin-left: 2%;
 		width: auto;
 		font-size: 1em;
 	}
-
 
 	.portfolio h3 {
 		width: auto;
@@ -771,19 +751,16 @@ footer p {
 		font-size: 0.7em;
 	}
 
-
 	p {
 		width: 90%;
 		margin-left: 2%;
 		font-size: 0.7em;
 	}
 
-
 	.link-text {
 		font-size: 0.6em;
 	}
 }
-
 
 
 @media only screen and (max-width: 700px) {
@@ -792,21 +769,17 @@ footer p {
 		grid-template-columns: 1fr 600px 1fr;
 	}
 
-
 	header {
 		grid-template-columns: 1fr 120px 480px 1fr;
 	}
-
 
 	main {
 		width: 600px;
 	}
 
-
 	.slogan {
 		font-size: 0.65em;
 	}
-
 
 	.slider {
 		width: 600px;
@@ -818,23 +791,44 @@ footer p {
 		height: auto;
 	}
 
-
 	.github-box,
 	.open-source-box {
 		width: 190px;
 		margin-right: 15px;
 	}
 
-
 	.codepen-box {
 		width: 190px;
 	}
-
 
 	.link-img img {
 		width: 190px;
 	}
 
+	.project-link-wcm {
+		margin-top: 0;
+	}
+
+	.project-link-pam,
+	.project-link-mg,
+	.project-link-ag {
+		margin-top: 10px;
+	} 
+
+	.box-img {
+		width: 190px;
+		margin-right: 15px;
+		position: relative;
+		left: 5px;
+	}
+
+	.project-descript p {
+		margin-top: 5px;
+	}
+
+	.project-descript a {
+		font-size: 0.66em;
+	}
 
 	footer {
 		grid-template-columns: 1fr 300px 300px 1fr;
@@ -844,16 +838,13 @@ footer p {
 		margin-top: 25px;
 	}
 
-
 	h1 {
 		margin-top: 20px;
 	}
 
-
 	h2 {
 		font-weight: bold;
 	}
-
 
 	h4 {
 		font-size: 0.72em;
@@ -867,7 +858,6 @@ footer p {
 }
 
 
-
 @media only screen and (max-width: 600px) {
 
 	.container {
@@ -876,19 +866,16 @@ footer p {
 		grid-gap: 30px 0;
 	}
 
-
 	header {
 		grid-template-columns: 120px 2fr;
 		grid-gap: 20px 0;
 	}
-
 
 	main {
 		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
 		width: 100%;
 	}
-
 
 	#photo,
 	.slider,
@@ -900,11 +887,14 @@ footer p {
 		width: 100%;
 	}
 
+	.text-box {
+		margin-top: 15px;
+	}
+
 	.slider img {
 		max-width: 100%;
 		height: auto;
 	}
-
 
 	footer {
 		grid-template-columns: 1fr;
@@ -913,7 +903,6 @@ footer p {
 		margin-top: 0;
 	}
 
-
 	footer p {
 		grid-column: 1 / 2;
 		font-size: 0.6em;
@@ -921,7 +910,6 @@ footer p {
 		text-align: center;
 		margin-left: 0;
 	}
-
 
 	.icons-box {
 		display: block;
@@ -933,7 +921,6 @@ footer p {
 		margin-left: 10%;
 	}
 
-
 	.icons-box a {
 		margin-top: 25px;
 		width: 25%;
@@ -942,7 +929,6 @@ footer p {
 		text-align: center;
 	}
 
-
 	h1,
 	h2 {
 		margin-right: 30px;
@@ -950,12 +936,10 @@ footer p {
 		margin-left: 20px;
 	}
 
-
 	h3 {
 		width: 96%;
 		margin-left: 2%;
 	}
-
 
 	.portfolio h3,
 	.portfolio-links h3 {
@@ -972,7 +956,6 @@ footer p {
 }
 
 
-
 @media only screen and (max-width: 500px) {
 
 	.slider {
@@ -980,11 +963,9 @@ footer p {
 		margin-bottom: 0;
 	}
 
-
 	.slider img {
 		height: auto;
 	}
-
 
 	.portfolio {
 		grid-template-columns: 1fr;
@@ -1000,7 +981,6 @@ footer p {
 		margin-bottom: 0;
 	}
 
-
 	.github-box,
 	.open-source-box {
 		grid-column: 1 / 2;
@@ -1008,24 +988,47 @@ footer p {
 		margin: 0 auto 25px auto;
 	}
 
-
 	.codepen-box {
 		grid-column: 1 / 2;
 		width: 230px;
 		margin: 0 auto 0 auto;
 	}
 
-
 	.link-img img {
 		width: 100%;
 	}
 
+	.project-link-wcm,
+	.project-link-pam,
+	.project-link-mg,
+	.project-link-ag {
+		grid-column: 1 / 2;
+		width: 230px;
+		margin: 0 auto 0 auto;
+		padding-bottom: 20px;
+	}
+
+	.box-img {
+		width: 100%;
+		margin-right: 0;
+		left: 0;
+	}
+ 
+	.project-descript {
+		grid-column: 1 / 2;
+		width: 230px;
+		margin-right: 0;
+		height: 100%;
+	}
+
+	.project-descript p {
+		margin-bottom: 20px;
+	}
 
 	h1 {
 		font-size: 0.7em;
 		letter-spacing: 0;
 	}
-
 
 	h2 {
 		letter-spacing: 0;
@@ -1034,7 +1037,6 @@ footer p {
 		color: #c61b6f;
 	}
 
-
 	h3,
 	.portfolio h3 {
 		font-size: 0.9em;
@@ -1042,17 +1044,14 @@ footer p {
 		letter-spacing: 0.05em;
 	}
 
-
 	h4 {
 		font-size: 0.8em;
 	}
-
 
 	.link-text {
 		font-size: 0.65em;
 	}
  }
-
 
 
 @media only screen and (max-width: 420px) {
@@ -1063,11 +1062,9 @@ footer p {
 		margin-bottom: 0;
 	}
 
-
 	.slider img {
 		top: 170px;
 	}
-
 
 	.slogan {
 		top: -40px;
@@ -1078,12 +1075,10 @@ footer p {
 		font-size: 0.65em;
 	}
 
-
 	h3,
 	.portfolio h3 {
 		font-size: 0.8em;
 	}
-
 
 	p {
 		width: 90%;
@@ -1093,13 +1088,11 @@ footer p {
 }
 
 
-
 @media only screen and (max-width: 370px) {
 
 	h1 {
 		font-size: 0.7em;
 	}
-
 
 	h2 {
 		font-size: 0.6em;
