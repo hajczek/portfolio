@@ -67,11 +67,11 @@ main {
 	position: absolute;
 	width: 1200px;
 	height: auto;
-  top: 170px;
-  -webkit-transition: opacity 3s ease-in-out;
- 	-moz-transition: opacity 3s ease-in-out;
-  -o-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
+	top: 170px;
+  -webkit-transition: filter 3s ease-in-out;
+ 	-moz-transition: filter 3s ease-in-out;
+  -o-transition: filter 3s ease-in-out;
+  transition: filter 3s ease-in-out;
 	box-shadow: 0 0 20px 5px #666;
 	margin-left: auto;
 	margin-right: auto;
@@ -79,20 +79,71 @@ main {
 
 @keyframes sliderAnimation {
 	0% {
-  		opacity: 1;
+		filter: hue-rotate(0deg);
+	}
+	5% {
+		filter: hue-rotate(18deg);
+	}
+	10% {
+		filter: hue-rotate(36deg);
+	}
+	15% {
+		filter: hue-rotate(54deg);
+	}
+	20% {
+		filter: hue-rotate(72deg);
+	}
+	25% {
+		filter: hue-rotate(108deg);
+	}
+	30% {
+		filter: hue-rotate(124deg);
+	}
+	35% {
+		filter: hue-rotate(142deg);
+	}
+	40% {
+		filter: hue-rotate(160deg);
 	}
 	45% {
-		opacity: 1;
+		filter: hue-rotate(178deg);
+	}
+	50% {
+		filter: hue-rotate(196deg);
 	}
 	55% {
-		opacity: 0;
+		filter: hue-rotate(214deg);
+	}
+	60% {
+		filter: hue-rotate(232deg);
+	}	
+	65% {
+		filter: hue-rotate(250deg);
+	}
+	70% {
+		filter: hue-rotate(268deg);
+	}
+	75% {
+		filter: hue-rotate(286deg);
+	}
+	80% {
+		filter: hue-rotate(304deg);
+	}
+	85% {
+		filter: hue-rotate(322deg);
+	}
+	90% {
+		filter: hue-rotate(340deg);
+	}
+	95% {
+		filter: hue-rotate(358deg);
 	}
 	100% {
-		opacity: 0;
+		filter: hue-rotate(360deg);
 	}
 }
 
-.slider .top {
+.slider .bottom {
 	animation: sliderAnimation 8s ease-in-out infinite alternate;
 }
 
