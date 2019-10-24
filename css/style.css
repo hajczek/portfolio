@@ -26,7 +26,7 @@ body {
 
 header {
 	/* background: linear-gradient(to right, #000 , #333); */
-	background-color: #343333;
+	background-color: #252626;
 	display: grid;
 	grid-template-columns: 1fr 120px 1080px 1fr;
 	height: 120px;
