@@ -216,7 +216,7 @@ main {
 	margin-top: 25px;
 }
 
-.project-link-rq {
+.project-link-mp {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
@@ -226,6 +226,20 @@ main {
 	align-content: start;
 	grid-column: 1 / 5;
 	grid-row: 6 / 7;
+	margin-top: 25px;
+	padding-top: 25px;
+}
+
+.project-link-rq {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	width: 100%;
+	height: auto;
+	justify-content: start;
+	align-content: start;
+	grid-column: 1 / 5;
+	grid-row: 7 / 8;
 	margin-top: 25px;
 	padding-top: 25px;
 }
@@ -305,7 +319,7 @@ p a {
 	justify-content: start;
 	align-content: start;
 	grid-column: 1 / 5;
-	grid-row: 7 / 8;
+	grid-row: 8 / 9;
 	padding-top: 25px;
 	margin-top: 25px;
 }
@@ -319,7 +333,7 @@ p a {
 	justify-content: start;
 	align-content: start;
 	grid-column: 1 / 5;
-	grid-row: 8 / 9;
+	grid-row: 9 / 10;
 	padding-top: 25px;
 	margin-top: 25px;
 }
@@ -333,7 +347,7 @@ p a {
 	justify-content: start;
 	align-content: start;
 	grid-column: 1 / 5;
-	grid-row: 9 / 10;
+	grid-row: 10 / 11;
 	padding-top: 25px;
 	margin-top: 25px;
 }
