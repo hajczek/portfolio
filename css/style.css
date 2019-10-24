@@ -190,7 +190,7 @@ main {
 
 .portfolio-links {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	width: 100%;
 	height: auto;
@@ -588,36 +588,47 @@ footer p {
 		grid-template-columns: 1fr 120px 780px 1fr;
 	}
 
+	.name-box {
+		width: 98%;
+	}
+
 	main{
 		width: 900px;
 	}
 
 	.slider {
-		width: 900px;
+		/* width: 900px; */
+		width: 100%;
 		height: 413px;
 	}
 
 	.slider img {
-		width: 900px;
+		/* width: 900px; */
+		width: 80%;
 		height: auto;
 	}
 
 	.github-box,
 	.open-source-box {
-		width: 290px;
+		/* width: 290px; 
+		margin-right: 15px; */
+		width: 260px;
 		margin-right: 15px;
 	}
 
 	.codepen-box {
-		width: 290px;
+		/* width: 290px; */
+		width: 260px;
 	}
 
 	.link-img img {
-		width: 290px;
+		/* width: 290px; */
+		width: 260px;
 	}
 
 	.box-img {
-		width: 290px;
+		/* width: 290px; */
+		width: 260px;
 		margin-right: 50px;
 	}
 	
@@ -654,9 +665,60 @@ footer p {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+
+	main{
+		width: 100%;
+	}
 
 	.container {
+		/* grid-template-columns: 1fr 800px 1fr; */
+		grid-template-columns: 10% 80% 10%;
+		grid-gap: 0;
+	}
+
+	.text-box {
+		width: 100%;
+	}
+
+	.portfolio {
+		width: 100%;
+	}
+
+	.portfolio-links {
+		width: 100%;
+	}
+
+	.github-box,
+	.open-source-box {
+		/* width: 290px; 
+		margin-right: 15px; */
+		width: 250px;
+		margin-right: 15px;
+	}
+
+	.codepen-box {
+		/* width: 290px; */
+		width: 250px;
+	}
+
+	.link-img img {
+		/* width: 290px; */
+		width: 250px;
+	}
+
+	.box-img {
+		/* width: 290px; */
+		width: 250px;
+		margin-right: 50px;
+	}
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+.container {
 		grid-template-columns: 1fr 700px 1fr;
 	}
 
@@ -670,7 +732,7 @@ footer p {
 
 	.slogan {
 		font-size: 0.65em;
-		top: -43px;
+		top: -15px;
 		left: 10px;
 		color: #444;
 		width: 100%;
@@ -685,6 +747,10 @@ footer p {
 	.slider img {
 		width: 700px;
 		height: auto;
+	}
+
+	.text-box {
+		padding-top: 30px;
 	}
 
 	.portfolio,
@@ -879,7 +945,6 @@ footer p {
 	.container {
 		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
-		grid-gap: 30px 0;
 	}
 
 	header {
@@ -905,6 +970,8 @@ footer p {
 
 	.text-box {
 		margin-top: 15px;
+		padding: 30px 20px 0;
+		width: 95%;
 	}
 
 	.slider img {
@@ -957,32 +1024,6 @@ footer p {
 		margin-left: 2%;
 	}
 
-	.portfolio h3,
-	.portfolio-links h3 {
-		grid-column: 1 / 6;
-		width: 96%;
-		margin-left: 2%;
-		font-size: 1em;
-	}
-
-	.link-text {
-		font-size: 0.55em;
-		margin-left: 10px;
-	}
-}
-
-
-@media only screen and (max-width: 500px) {
-
-	.slider {
-		height: 200px;
-		margin-bottom: 0;
-	}
-
-	.slider img {
-		height: auto;
-	}
-
 	.portfolio {
 		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
@@ -994,7 +1035,7 @@ footer p {
 		grid-template-columns: 1fr;
 		grid-column: 1 / 2;
 		grid-row: 7 / 13;
-		margin-bottom: 0;
+		margin-bottom: 50px;
 	}
 
 	.github-box,
@@ -1041,6 +1082,36 @@ footer p {
 		margin-bottom: 20px;
 	}
 
+	.portfolio h3,
+	.portfolio-links h3 {
+		grid-column: 1 / 6;
+		width: 96%;
+		margin-left: 4%;
+		font-size: 1em;
+	}
+
+	.slogan {
+		top: -15px;
+	}
+
+	.link-text {
+		font-size: 0.55em;
+		margin-left: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	.slider {
+		height: 200px;
+		margin-bottom: 0;
+	}
+
+	.slider img {
+		height: auto;
+	}
+
 	h1 {
 		font-size: 0.7em;
 		letter-spacing: 0;
@@ -1083,8 +1154,6 @@ footer p {
 	}
 
 	.slogan {
-		top: -40px;
-		left: 10px;
 		z-index: 100;
 		width: 100%;
 		color: #444;
