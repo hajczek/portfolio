@@ -244,6 +244,21 @@ main {
 	padding-top: 25px;
 }
 
+.project-link-cc {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	width: 100%;
+	height: auto;
+	justify-content: start;
+	align-content: start;
+	grid-column: 1 / 5;
+	grid-row: 7 / 8;
+	margin-top: 25px;
+	padding-top: 25px;
+}
+
+
 .box-img {
 	width: 360px;
 	grid-column: 1 / 1;
@@ -254,6 +269,7 @@ main {
 
 .project-link-wcm img,
 .project-link-rq img,
+.project-link-cc img,
 .project-link-pam img,
 .project-link-mg img,
 .project-link-ag img {
@@ -1087,6 +1103,7 @@ footer p {
 
 	.project-link-wcm,
 	.project-link-rq,
+	.project-link-cc,
 	.project-link-mp,
 	.project-link-pam,
 	.project-link-mg,
