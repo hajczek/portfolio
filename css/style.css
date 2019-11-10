@@ -39,12 +39,16 @@
  }
 
  .title {
-   color: #555;
-    font-size: 3rem;
-    position: relative;
-    top: 0;
-    left: 20px;
-    letter-spacing: 0.2em;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  margin-right: 20px;
+  color: #555;
+  font-size: 3rem;
+  position: relative;
+  top: 0;
+  left: 20px;
+  letter-spacing: 0.2em;
  }
  
  main {
@@ -163,7 +167,7 @@
    display: grid;
    height: auto;
    padding-bottom: 20px;
-   box-shadow: 0 0 20px 5px #666;
+   box-shadow: 0 0 15px 3px #888;
    width: 360px;
  }
  
@@ -171,6 +175,7 @@
  .open-source-box:hover,
  .codepen-box:hover {
    box-shadow: none;
+   transition: all 0.2s ease-in;
  }
  
  .github-box {
@@ -292,7 +297,8 @@
  .project-link-pam img:hover,
  .project-link-mg img:hover,
  .project-link-ag img:hover {
-   opacity: 0.4;
+   opacity: 0.8;
+   transition: all 0.2s ease-in;
  }
  
  .project-descript {
@@ -415,9 +421,10 @@
  
  h1 {
    display: grid;
-   justify-content: end;
-   align-content: end;
-   grid-column: 2 / 3;
+   justify-content: start;
+   align-content: start;
+   margin-left: 20px;
+   grid-column: 2;
    color: #5fbdd5;
    letter-spacing: 0.1em;
    margin-top: 15px;
@@ -427,12 +434,13 @@
  
  h2 {
    display: grid;
-   justify-content: end;
-   align-content: end;
-   grid-column: 2 / 3;
+   justify-content: start;
+   align-content: start;
+   grid-column: 2;
    color: #dd5798;
    letter-spacing: 0.12em;
    font-size: 0.8em;
+   margin-left: 20px;
    /* font: 300 0.9em "Exo 2", sans-serif; */
  }
  
@@ -457,16 +465,6 @@
    letter-spacing: 0.05em;
    font-size: 1.1em;
    font-weight: 700;
- }
- 
- .slogan {
-   color: #d7cdc1;
-   font: normal 0.9em "Taviraj", serif;
-   position: relative;
-   top: 20px;
-   left: 30px;
-   z-index: 100;
-   width: 100%;
  }
  
  p {
@@ -509,7 +507,8 @@
  }
  
  .link-img img:hover {
-   opacity: 0.5;
+   opacity: 0.8;
+   transition: all 0.2s ease-in;
  }
  
  
@@ -786,14 +785,6 @@
      width: 700px;
    }
  
-   .slogan {
-     font-size: 0.65em;
-     top: -15px;
-     left: 10px;
-     color: #444;
-     width: 100%;
-   }
- 
    .slider {
      width: 700px;
      height: 321px;
@@ -913,10 +904,6 @@
  
    main {
      width: 600px;
-   }
- 
-   .slogan {
-     font-size: 0.65em;
    }
  
    .slider {
@@ -1150,10 +1137,6 @@
      font-size: 1em;
    }
  
-   .slogan {
-     top: -15px;
-   }
- 
    .link-text {
      font-size: 0.55em;
      margin-left: 10px;
@@ -1211,13 +1194,6 @@
  
    .slider img {
      top: 170px;
-   }
- 
-   .slogan {
-     z-index: 100;
-     width: 100%;
-     color: #444;
-     font-size: 0.65em;
    }
  
    h3,
