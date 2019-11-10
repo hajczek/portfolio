@@ -28,7 +28,7 @@
    /* background: linear-gradient(to right, #000 , #333); */
    background-color: #252626;
    display: grid;
-   grid-template-columns: 1fr 120px 1080px 1fr;
+   grid-template-columns: 1fr 120px 600px 480px 1fr;
    height: 120px;
    width: 100%;
    justify-content: start;
@@ -36,6 +36,15 @@
    grid-column: 1 / 4;
    grid-row: 1 / 2;
    box-shadow: 0 0 20px 5px #666;
+ }
+
+ .title {
+   color: #555;
+    font-size: 3rem;
+    position: relative;
+    top: 0;
+    left: 20px;
+    letter-spacing: 0.2em;
  }
  
  main {
@@ -412,7 +421,8 @@
    color: #5fbdd5;
    letter-spacing: 0.1em;
    margin-top: 15px;
-   font: 1.1em "Exo 2", sans-serif;
+   font-size: 1.2em;
+   /* font: 1.1em "Exo 2", sans-serif; */
  }
  
  h2 {
@@ -420,9 +430,10 @@
    justify-content: end;
    align-content: end;
    grid-column: 2 / 3;
-   color: #f34299;
-   letter-spacing: 0.05em;
-   font: 300 0.9em "Exo 2", sans-serif;
+   color: #dd5798;
+   letter-spacing: 0.12em;
+   font-size: 0.8em;
+   /* font: 300 0.9em "Exo 2", sans-serif; */
  }
  
  h3,
