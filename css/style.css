@@ -462,9 +462,9 @@
    font-size: 0.8em;
      font-weight: 700;
      line-height: 1.6;
-     width: 90%;
-     margin-left: auto;
-     margin-right: auto;
+     width: 100%;
+     margin-left: 0;
+     margin-right: 0;
  }
  
  footer p {
