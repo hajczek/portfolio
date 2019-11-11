@@ -84,7 +84,6 @@ main {
   -moz-transition: filter 3s ease-in-out;
   -o-transition: filter 3s ease-in-out;
   transition: filter 3s ease-in-out;
-  box-shadow: 0 0 20px 5px #666;
 }
 
 @keyframes sliderAnimation {
@@ -203,9 +202,8 @@ main {
 .codepen-box {
   /* display: flex; */
   /* height: auto; */
-  padding: 20px 0;
-  box-shadow: 0 0 15px 3px #888;
-  width: 30%;
+  padding: 20px 20px;
+  width: 20%;
 }
 
 .open-source-box {
@@ -672,6 +670,13 @@ footer p {
     font-size: 0.6em;
     line-height: 1.2;
   }
+
+  .github-box,
+  .open-source-box,
+  .codepen-box {
+    padding: 10px 10px;
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -692,6 +697,10 @@ footer p {
     height: 170px;
     object-fit: cover;
   }
+  
+  .portfolio h4{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -709,20 +718,11 @@ footer p {
   p {
     font-size: 0.7em;
   }
-  /* .portfolio {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
   .github-box,
   .open-source-box,
   .codepen-box {
-    display: block;
-    float: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: 30px;
-  } */
+    padding: 10px 10px 5px 10px;
+  }
 
   .portfolio-links {
     grid-template-columns: 1fr;
@@ -730,10 +730,6 @@ footer p {
   }
 
   .link-text {
-    display: none;
-  }
-
-  .portfolio h4{
     display: none;
   }
 }
