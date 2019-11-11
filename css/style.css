@@ -153,7 +153,7 @@ main {
 }
 
 .bottom {
-  animation: sliderAnimation 8s ease-in-out infinite alternate;
+  animation: sliderAnimation 38s ease-in-out infinite alternate;
 }
 
 /*
@@ -779,7 +779,6 @@ footer p {
     font-size: 0.7em;
   }
 }
-
 
 @media only screen and (max-width: 390px) {
   h1 {
