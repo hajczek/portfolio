@@ -41,12 +41,17 @@ header {
   box-shadow: 0 0 20px 5px #666;
 }
 
+.name-box {
+  grid-column: 3 / 4;
+}
+
 .title {
   display: grid;
   justify-content: end;
   align-content: end;
   margin-right: 20px;
   color: #555;
+  grid-column: 4 / 5;
   font-size: 3rem;
   position: relative;
   top: 0;
@@ -288,7 +293,6 @@ main {
   grid-column: 1 / 5;
   grid-row: 7 / 8;
   margin-top: 25px;
-  padding-top: 25px;
 }
 
 .project-link-cc {
@@ -302,7 +306,6 @@ main {
   grid-column: 1 / 5;
   grid-row: 8 / 9;
   margin-top: 25px;
-  padding-top: 25px;
 }
 
 .project-link-pam {
@@ -316,7 +319,6 @@ main {
   grid-column: 1 / 5;
   grid-row: 9 / 10;
   padding-top: 25px;
-  margin-top: 25px;
 }
 
 .project-link-mg {
@@ -329,7 +331,6 @@ main {
   align-content: start;
   grid-column: 1 / 5;
   grid-row: 10 / 11;
-  padding-top: 25px;
   margin-top: 25px;
 }
 
@@ -343,7 +344,6 @@ main {
   align-content: start;
   grid-column: 1 / 5;
   grid-row: 11 / 12;
-  padding-top: 25px;
   margin-top: 25px;
 }
 
@@ -582,7 +582,7 @@ footer p {
 
 .icons-box {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 60px 60px;
   justify-content: end;
   align-content: end;
   grid-column: 3 / 4;
@@ -593,12 +593,14 @@ footer p {
   margin-top: 25px;
 }
 
-.icons-box a img {
-  opacity: 0.5;
+.icons-box a i {
+  color: #fff;
+  opacity: 0.6;
 }
 
-.icons-box a img:hover {
-  opacity: 1;
+.icons-box a i:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease-in;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -687,7 +689,7 @@ footer p {
   }
 
   .link-proj img {
-    height: 180px;
+    height: 170px;
     object-fit: cover;
   }
 }
@@ -707,7 +709,7 @@ footer p {
   p {
     font-size: 0.7em;
   }
-  .portfolio {
+  /* .portfolio {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -720,11 +722,19 @@ footer p {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 30px;
-  }
+  } */
 
   .portfolio-links {
     grid-template-columns: 1fr;
     margin-top: 0;
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .portfolio h4{
+    display: none;
   }
 }
 
@@ -733,9 +743,11 @@ footer p {
     grid-template-columns: 5% 120px 1fr 5%;
   }
   .title {
-    display: none;
+    grid-column: 3 / 4;
+    justify-content: start;
+    margin-top: -50px;
   }
-  .github-box,
+  /* .github-box,
   .open-source-box,
   .codepen-box {
     display: block;
@@ -743,7 +755,8 @@ footer p {
     width: 70%;
     margin-left: 15%;
     margin-bottom: 30px;
-  }
+  } */
+
   .icons-box a img {
     opacity: 0.5;
     width: 30px;
