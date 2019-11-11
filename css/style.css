@@ -219,7 +219,7 @@ main {
 
 .github-box {
   /* grid-column: 1 / 1; */
-  background-color: #d84064;
+  background-color: #05647c;
   /* background-image: linear-gradient(to right, #d84064 , #a5025c); */
 }
 
@@ -231,7 +231,7 @@ main {
 
 .codepen-box {
   /* grid-column: 3 / 3; */
-  background-color: #0c7784;
+  background-color: #d84064;
   /* background-image: linear-gradient(to right, #09abc0  , #026f7e); */
 }
 
@@ -382,7 +382,7 @@ main {
 .project-descript {
   grid-column: 2 / 5;
   /* background-color: #252626; */
-  background-color: #09555f;
+  background-color: #05647c;
   color: #ede8dd;
   padding: 30px;
 }
@@ -560,11 +560,11 @@ footer p {
   */
 
 .link-text {
-  color: #eee;
+  color: #fff;
   font-size: 0.9em;
   line-height: 1.2em;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.8;
   font-weight: bold;
 }
 
@@ -604,6 +604,8 @@ footer p {
   opacity: 0.8;
   transition: all 0.4s ease-in;
 }
+
+/* ----------- RESPONSIVNES ***************/
 
 @media only screen and (max-width: 1600px) {
   .container {
@@ -661,40 +663,39 @@ footer p {
   h1 {
     font-size: 1em;
   }
-
   .title {
     font-size: 2rem;
   }
-
   .project-descript {
     padding: 20px;
   }
-
   .project-descript p {
     font-size: 0.6em;
     line-height: 1.2;
   }
-
   .github-box,
   .open-source-box,
   .codepen-box {
     padding: 10px 10px;
     width: 25%;
   }
-
   .box-img {
     width: 200px;
   }
-
   .link-proj img {
     width: 100%;
     height: 150px;
-}
+  }
 }
 
 @media only screen and (max-width: 700px) {
   header {
-    grid-template-columns: 5% 120px 1fr 1fr 5%;
+    grid-template-columns: 5% 120px 1fr 5%;
+  }  
+  .title {
+    grid-column: 3 / 4;
+    justify-content: start;
+    margin-top: -50px;
   }
   h1 {
     font-size: 0.8em;
@@ -705,12 +706,14 @@ footer p {
   footer {
     grid-template-columns: 5% 55% 35% 5%;
   }
-
+  .link-text {
+    font-size:0.7em;
+    color: #efefef;
+  }
   .link-proj img {
     height: 170px;
     object-fit: cover;
-  }
-  
+  }  
   .portfolio h4{
     display: none;
   }
@@ -736,44 +739,35 @@ footer p {
   .codepen-box {
     padding: 10px 10px 5px 10px;
   }
-
   .portfolio-links {
     grid-template-columns: 1fr;
     margin-top: 0;
   }
-
   .link-text {
     display: none;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  header {
-    grid-template-columns: 5% 120px 1fr 5%;
-  }
-  .title {
-    grid-column: 3 / 4;
-    justify-content: start;
-    margin-top: -50px;
-  }
-
   .portfolio {
     display: flex;
     flex-direction: row;
   }
   .github-box,
-  .open-source-box,
-  .codepen-box {
+  .open-source-box{
     display: block;
     float: left;
     width: 50%;
     margin-bottom: 30px;
   }
-
+  .codepen-box {
+    display: block;
+    float: left;
+    width: 50%;
+  }
   .box-img {
     width: 150px;
   }
-
   .icons-box a img {
     opacity: 0.5;
     width: 30px;
@@ -783,5 +777,26 @@ footer p {
   }
   .link-text {
     font-size: 0.7em;
+  }
+}
+
+
+@media only screen and (max-width: 390px) {
+  h1 {
+    font-size: 0.8em;
+    letter-spacing: 0;
+  }
+  h2 {
+    font-size: 0.8em;
+    letter-spacing: 0;
+  }
+  .title {
+    font-size: 1em;
+  }
+  .project-descript p {
+    display: none;
+  }
+  .link-proj img {
+    height: 120px;
   }
 }
